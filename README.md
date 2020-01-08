@@ -114,7 +114,7 @@ mvn package
 2) build container
 
 ```
-docker run -i --rm -p 8080:8080 quarkus/metrics-exporter-jvm
+docker build -f src/main/docker/Dockerfile.jvm -t quarkus/metrics-exporter-jvm .
 ```
 
 3) Run the container

@@ -81,7 +81,7 @@ services:
   kafkahq:
     image: tchiotludo/kafkahq
     container_name: kafkahq
-    restart: always
+    # restart: always
     depends_on:
       - kafka
     ports:

@@ -3,6 +3,21 @@
 
 This Service is based on the [Quarkus](https://quarkus.io/) Framework.
 
+## Architecture
+
+![architecture](architecture.png)
+
+Involved components:
+
+- Kafka : Message Broker
+- Zookeeper : required for Kafka coordination
+- KafkaHQ : [Graphical UI](https://github.com/tchiotludo/akhq) for watching inside Kafka
+- Mosquitto : An OpenSource [MQTT Broker](https://mosquitto.org) for connecting KafkaConnect and Kafka and 
+sending messages easily between them
+- KafkaConnect : The Connector between Mosquitto and Kafka
+- MetricsExporter : this project :-) 
+
+
 ## Config
 
 The file resources/application.properties contains the main config:

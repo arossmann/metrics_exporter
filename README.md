@@ -117,7 +117,7 @@ In the Interface [KafkaConnectMetricsService](src/main/java/com/github/arossmann
 ## development (=local) run
 
 ```
-./mvnw compile quarkus:dev
+mvn compile quarkus:dev
 ```
 
 ## creating container
